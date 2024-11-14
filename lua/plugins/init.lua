@@ -13,6 +13,9 @@ return {
     end,
   },
 
+  require 'plugins.lazygit',
+  require 'plugins.fugitive'
+
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {

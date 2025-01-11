@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre",
     opts = require "configs.conform",
   },
 
@@ -13,8 +13,10 @@ return {
     end,
   },
 
-  require 'plugins.lazygit',
-  require 'plugins.fugitive'
+  require "plugins.lazygit",
+  require "plugins.fugitive",
+  require "plugins.tmux-navigator",
+  require "plugins.harpoon",
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",

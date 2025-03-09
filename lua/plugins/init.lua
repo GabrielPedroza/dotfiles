@@ -17,6 +17,7 @@ return {
   require "plugins.fugitive",
   require "plugins.tmux-navigator",
   require "plugins.harpoon",
+  require "plugins.graphql",
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",

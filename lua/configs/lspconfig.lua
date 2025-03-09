@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "gopls", "ts_ls", "clangd" }
+local servers = { "html", "cssls", "gopls", "ts_ls", "clangd", "graphql" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -26,4 +26,13 @@ lspconfig.ts_ls.setup {
       checkJs = true,
     },
   },
+}
+
+lspconfig.graphql.setup {
+  on_attach = nvlsp.on_attach,
+  root_dir = lspconfig.util.root_pattern(".graphqlconfig", ".graphqlrc", "package.json"),
+  flags = {
+    debounce_text_changes = 150,
+  },
+  capabilities = nvlsp.capabilities,
 }

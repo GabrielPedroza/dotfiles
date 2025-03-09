@@ -22,9 +22,6 @@ end)
 map("n", "<C-k>", function()
   harpoon:list():select(2)
 end)
-map("n", "<C-l>", function()
-  harpoon:list():select(3)
-end)
 
 -- basic telescope configuration
 local conf = require("telescope.config").values

@@ -15,7 +15,6 @@ return {
 
   require "plugins.lazygit",
   require "plugins.fugitive",
-  require "plugins.tmux-navigator",
   require "plugins.harpoon",
   require "plugins.graphql",
 
